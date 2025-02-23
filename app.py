@@ -11,9 +11,9 @@ tokenizer = T5Tokenizer.from_pretrained("t5-small")
 
 # Load model correctly
 try:
-    model = T5ForConditionalGeneration.from_pretrained("t5-small")  # Load architecture
-    model.load_state_dict(torch.load(MODEL_PATH, map_location=torch.device('cpu')))  # Load weights
-    model.eval()  # Set model to evaluation mode
+    model = T5ForConditionalGeneration.from_pretrained("t5-small")
+    model.load_state_dict(torch.load(MODEL_PATH, weights_only=True))
+    model.eval()
     print("✅ Model loaded successfully!")
 except Exception as e:
     print(f"❌ Error loading model: {e}")
@@ -65,6 +65,6 @@ def summarize():
         print("❌ Error:", str(e))
         return jsonify({'error': 'An error occurred: ' + str(e)}), 500
 
-if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port) # Run app
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))  # Default to 5000 if not set
+    app.run(host="0.0.0.0", port=port)
