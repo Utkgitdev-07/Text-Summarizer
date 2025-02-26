@@ -52,7 +52,7 @@ The application will be available at `http://127.0.0.1:5000/`.
 |------------------|----------------|
 | ![Before](screenshots/before.png) | ![After](screenshots/after.png) |
 
-Replace `screenshots/before.png` and `screenshots/after.png` with the actual paths of your images in the repository.
+
 
 ## Model Details
 The summarization model is a deep learning-based approach trained on a large dataset. The model file is stored in the `models/` directory as `text_summarizer_full.pth`.
