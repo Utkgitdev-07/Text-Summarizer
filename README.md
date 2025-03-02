@@ -48,9 +48,14 @@ The application will be available at `http://127.0.0.1:5000/`.
 4. The summarized text will be displayed below.
 
 ## Screenshots
-| Before Summarization | After Summarization |
-|------------------|----------------|
-| ![Before](screenshots/before.png) | ![After](screenshots/after.png) |
+
+Here are some screenshots to illustrate how the project works:
+
+### **Before Execution**
+![Before](screenshots/before.png)
+
+### **After Execution**
+![After](screenshots/after.png)
 
 
 
