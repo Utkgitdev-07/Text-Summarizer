@@ -31,6 +31,8 @@ cd text-summarizer
 
 ### 2. Install Dependencies
 ```bash
+py -3.10 -m venv tfenv
+.\tfenv\Scripts\activate 
 pip install -r requirements.txt
 ```
 
